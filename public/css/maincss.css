@@ -1,0 +1,571 @@
+body {
+    padding-top: 56px;
+    background: #f4f4f9;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(33, 133, 121);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #ffffff33 !important;
+    /* Ensure text color is white */
+}
+
+.nav-link img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.carousel-item {
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+.jumbotron {
+    background-color: #f0f0f0; /* Nền sáng với màu sắc nhẹ nhàng */
+    border-radius: 15px;
+    padding: 1.5rem; /* Điều chỉnh padding cho phù hợp */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Đặt margin tự động để căn giữa */
+    max-width: 100%; /* Đảm bảo không bị tràn */
+    box-sizing: border-box; /* Bao gồm padding và border trong tổng chiều rộng */
+}
+.jumbotron-custom {
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+}
+
+.jumbotron-custom h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.jumbotron-custom p {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+.jumbotron-custom hr {
+    border-top: 3px solid red;
+    width: 80%;
+    margin: 1rem auto;
+}
+    /* Responsive Styles */
+    @media (max-width: 767px) {
+        .jumbotron-custom h1 {
+            font-size: 2rem;
+        }
+
+        .jumbotron-custom p {
+            font-size: 1rem;
+        }
+
+        .level-button {
+            font-size: 0.875rem;
+            padding: 0.5rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .jumbotron-custom {
+            padding: 40px;
+        }
+    }
+
+.footer {
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #343a40 !important;
+    /* Adjust navbar background color when sticky */
+}
+
+.btn-login {
+    background-color: #90ee90;
+    /* Light green color */
+    border: none;
+    color: black;
+    /* Text color */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #76c776;
+    /* Slightly darker green on hover */
+}
+
+/* CSS for level buttons */
+.level-button {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    /* Text color for better contrast */
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    background-color: #007bff;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.level-button:hover {
+    background-color: #0056b3;
+}
+
+/* Assign different background colors */
+.level-button[data-level="N5"] {
+    background-color: #ff9999;
+    /* Light Red */
+}
+
+.level-button[data-level="N4"] {
+    background-color: #66b3ff;
+    /* Light Blue */
+}
+
+.level-button[data-level="N3"] {
+    background-color: #99ff99;
+    /* Light Green */
+}
+
+.level-button[data-level="N2"] {
+    background-color: #ffcc99;
+    /* Light Orange */
+}
+
+.level-button[data-level="N1"] {
+    background-color: #c2c2f0;
+    /* Light Purple */
+}
+
+/* Styling for exam links */
+.exam-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+}
+.exam-link:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.exam-link:hover {
+    color: #495057;
+    /* Darker gray on hover */
+}
+
+/* Styling for exam list */
+.exam-list {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.exam-item {
+    margin-bottom: 15px;
+    /* Spacing between items */
+    font-size: large;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+.exam-item:last-child {
+    border-bottom: none;
+}
+
+.exam-number {
+    font-weight: bold;
+    color: #007bff;
+}
+.btn-primary {
+    margin-top: 20px;
+    /* Add spacing for the button */
+}
+
+.question-container {
+    margin-bottom: 1rem;
+}
+
+.question-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.answers-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.answer-button {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.answer-text {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    color: #007bff;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.answer-text:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.answer-button input:checked+.answer-text {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.post-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #666;
+}
+
+.post-description {
+    font-size: 1.2rem;
+    color: #555;
+    white-space: pre-line;
+    /* Preserve whitespace and line breaks */
+    overflow-wrap: break-word;
+    /* Break long words to prevent overflow */
+}
+
+.content-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.contents .content-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content-description {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.comments {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comments-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.comment-content {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.comment-item {
+    border-bottom: 1px solid #eee;
+}
+
+.comment-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.comment-form textarea {
+    resize: none;
+    font-size: 1rem;
+}
+
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+.list-group-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+}
+
+.img-fluid {
+    border-radius: 8px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.silver-frame {
+    border: 2px solid silver;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+.exam-header {
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.question-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.form-check-label {
+    display: block;
+    padding: 10px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-check-input {
+    display: none;
+}
+
+.form-check-input:checked+.form-check-label {
+    background: #e2e6ea;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+.kanji-tooltip {
+    color: #dc3545;
+    border-bottom: 1px dashed #dc3545;
+    cursor: pointer;
+}
+
+.about-us-container {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
+    background: url('/images/about-hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+.content-section {
+    padding: 50px 0;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.content-section .img-fluid {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}
+
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    padding: 1rem 1.5rem;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #343a40;
+}
+
+.modal-body {
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+.modal-footer {
+    border-top: 1px solid #e9ecef;
+    padding: 1rem 1.5rem;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+.dropdown-menu {
+    background-color: #343a40;
+    border: none;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #ffffff;
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+    background-color: #495057;
+    color: #ffffff;
+}
+
+.navbar .dropdown-toggle::after {
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+    margin-left: .5em;
+}
+
+
+.btn-login:hover,
+.btn-login:focus {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+

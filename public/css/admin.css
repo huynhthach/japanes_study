@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    /* Remove default margin */
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    /* Bootstrap light background color */
+    padding-top: 15px;
+    /* Adjusted padding for fixed navbar */
+}
+
+.content {
+    margin-left: 200px;
+    /* Width of the sidebar */
+}
+
+/* Phần lọc */
+.sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Form lọc */
+.sort .form-group {
+    margin-bottom: 0;
+}
+
+/* Bảng */
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+/* Đầu bảng */
+.table thead th {
+    background-color: #f8f9fa;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Dòng dữ liệu */
+.table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Phân trang */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #007bff;
+    border-radius: 4px;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 8px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: #e9ecef;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron h1,
+.jumbotron h3 {
+    margin-bottom: 1rem;
+}
+
+/* Nút */
+.btn {
+    border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sort {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sort .form-group {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .pagination {
+        font-size: 14px;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    .btn-custom {
+        background-color: #4CAF50;
+        /* Màu nền */
+        border: none;
+        /* Xóa bỏ viền */
+        color: white;
+        /* Màu chữ */
+        padding: 10px 20px;
+        /* Khoảng cách padding */
+        text-align: center;
+        /* Canh giữa nội dung */
+        text-decoration: none;
+        /* Xóa bỏ gạch chân */
+        display: inline-block;
+        /* Hiển thị inline-block */
+        font-size: 16px;
+        /* Kích thước font chữ */
+        margin: 4px 2px;
+        /* Khoảng cách giữa các button */
+        cursor: pointer;
+        /* Hiển thị con trỏ khi hover */
+        border-radius: 8px;
+        /* Bo tròn góc */
+    }
+
+    .btn-custom:hover {
+        background-color: #45a049;
+        /* Màu nền khi hover */
+    }
+}
